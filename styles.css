@@ -17,15 +17,50 @@ body {
 }
 
 header {
+	position: relative;
+	height: 80vh;
+	overflow: hidden;
+}
+
+.carousel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-images {
+	display: flex;
+	width: 300%;
+	height: 100%;
+	animation: slide 15s infinite;
+}
+
+.carousel-image {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.carousel-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
 	text-align: center;
-	padding: 50px 0;
 }
 
 header h1 {
 	font-family: "Playfair Display", serif;
 	font-size: 48px;
 	margin: 0;
-	color: #b4886b;
+	color: #fff;
 }
 
 .date,
@@ -94,6 +129,21 @@ footer a {
 
 footer a:hover {
 	text-decoration: underline;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-100%);
+	}
+	66% {
+		transform: translateX(-200%);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 @media (max-width: 768px) {
