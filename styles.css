@@ -132,6 +132,7 @@ header h1 {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	margin-bottom: 40px;
 	text-align: center;
+	opacity: 80%;
 }
 
 .details h2 {
@@ -197,7 +198,7 @@ header h1 {
 
 .party-group {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: flex-start;
 	margin-bottom: 20px;
 }
@@ -209,7 +210,7 @@ header h1 {
 
 .party-item {
 	text-align: justify;
-	margin: 0 57px; /* Reduce the margin between items */
+	margin: 0 20px; /* Reduce the margin between items */
 }
 
 .party-item h3 {
@@ -222,7 +223,7 @@ header h1 {
 
 .party-item p {
 	font-family: "Raleway", sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	color: #555;
 	margin: 0;
 	margin-bottom: 5px;
