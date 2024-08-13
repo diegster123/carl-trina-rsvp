@@ -153,10 +153,6 @@ header h1 {
 	color: white;
 }
 
-.timeline-item:hover {
-	transform: scale(1.05);
-}
-
 .rsvp h2 {
 	font-family: "Playfair Display", serif;
 	font-size: 28px;
