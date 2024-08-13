@@ -102,6 +102,28 @@ header h1 {
 	font-style: italic;
 }
 
+.invitation .save-the-date {
+	font-size: 18px;
+	font-family: "Raleway", sans-serif;
+	color: #777;
+	margin: 0;
+}
+
+.invitation .date {
+	font-family: "Playfair Display", serif;
+	font-size: 48px;
+	margin: 10px 0;
+	color: #b4886b;
+}
+
+.invitation .decoration {
+	width: 200px;
+	height: 3px;
+	background-color: #b4886b;
+	margin: 20px auto 0 auto;
+	position: relative;
+}
+
 .details {
 	background-color: #fff;
 	padding: 40px;
@@ -151,6 +173,92 @@ header h1 {
 	font-size: 14px;
 	margin: 5px 0 0;
 	color: white;
+}
+
+.wedding-party {
+	text-align: center;
+	margin: 40px 0;
+}
+
+.wedding-party .title,
+.nuptials {
+	font-family: "Playfair Display", serif;
+	color: #b4886b;
+}
+
+.wedding-party .title {
+	font-size: 40px;
+	margin-bottom: -20px;
+}
+.wedding-party .nuptials {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.party-group {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.party-group h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 36px;
+	color: #b4886b;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.sponsor-title {
+	margin-top: 50px;
+	margin-bottom: -20px;
+}
+
+.sponsors {
+	display: flex;
+	justify-content: space-between; /* Creates space between the two columns */
+}
+
+.party-item {
+	text-align: justify;
+	margin: 0 30px; /* Reduce the margin between items */
+}
+
+.party-item h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.party-item h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.party-item p {
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	color: #555;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.sponsors {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.sponsors-left,
+.sponsors-right {
+	text-align: justify;
+	margin: 50px;
 }
 
 .rsvp h2 {
