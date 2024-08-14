@@ -132,7 +132,7 @@ header h1 {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	margin-bottom: 40px;
 	text-align: center;
-	opacity: 80%;
+	opacity: 75%;
 }
 
 .details h2 {
@@ -213,7 +213,8 @@ header h1 {
 	margin: 0 20px; /* Reduce the margin between items */
 }
 
-.party-item h3 {
+.party-item,
+.best-man h3 {
 	font-family: "Raleway", sans-serif;
 	font-size: 30px;
 	color: #333;
@@ -239,6 +240,24 @@ header h1 {
 .sponsors-right {
 	text-align: left;
 	margin: 20px;
+}
+
+.best-man,
+.maid-of-honor p {
+	font-family: "Raleway", sans-serif;
+	font-size: 20px;
+	color: #555;
+	margin: 0;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.maid-of-honor h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 30px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .rsvp h2 {
