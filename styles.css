@@ -77,11 +77,6 @@ header h1 {
 	color: #fff;
 }
 
-.location {
-	font-size: 18px;
-	margin: 5px 0;
-}
-
 .carousel-control {
 	position: absolute;
 	top: 50%;
@@ -137,7 +132,8 @@ header h1 {
 }
 
 .details,
-.wedding-party {
+.wedding-party,
+.wedding-location {
 	background-color: #fff;
 	padding: 40px;
 	border-radius: 8px;
@@ -145,6 +141,11 @@ header h1 {
 	margin-bottom: 40px;
 	text-align: center;
 	opacity: 75%;
+}
+
+.location {
+	font-size: 18px;
+	margin: 5px 0;
 }
 
 .details h2 {
@@ -194,7 +195,8 @@ header h1 {
 }
 
 .wedding-party .title,
-.nuptials {
+.nuptials,
+.wedding-location-item {
 	font-family: "Playfair Display", serif;
 	color: #b4886b;
 }
@@ -316,6 +318,16 @@ header h1 {
 	margin: 0;
 	margin-bottom: 5px;
 	text-align: center;
+}
+
+.wedding-location {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.wedding-location-item {
+	flex: 1;
 }
 
 .rsvp h2 {
