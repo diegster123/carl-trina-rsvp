@@ -4,7 +4,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url(images/Flower\ Floral\ Wedding\ Invitation.svg);
+	background-image: url(images/wedding-bg.svg);
 	background-size: cover;
 	color: #333;
 	font-family: "Raleway", sans-serif;
@@ -14,7 +14,7 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 85%;
+	max-width: 88%;
 	padding: 20px;
 }
 
@@ -140,7 +140,7 @@ header h1 {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	margin-bottom: 40px;
 	text-align: center;
-	opacity: 75%;
+	opacity: 85%;
 }
 
 .location {
@@ -326,12 +326,22 @@ header h1 {
 
 .wedding-location {
 	display: flex;
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
 }
 
 .wedding-location-item {
 	flex: 1;
+	min-width: 40%;
+	margin: 6px;
+}
+
+.wedding-location-item h1 {
+	background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+	padding: 10px;
+	margin: 0;
+	position: relative;
+	z-index: 1;
 }
 
 .parish {
@@ -341,6 +351,16 @@ header h1 {
 	width: 100%; /* Ensure the div takes up the full width of its container */
 	border-radius: 8px; /* Optional: adds a slight rounding to the corners */
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for some depth */
+	position: relative;
+	z-index: 0;
+}
+
+.ceremony-bg {
+	background-image: url(images/ust-parish.jpg);
+}
+
+.reception-bg {
+	background-image: url(images/winford-resort-casino.jpg);
 }
 
 .rsvp h2 {
@@ -384,5 +404,52 @@ footer a:hover {
 
 	.middle {
 		line-height: 50px;
+	}
+
+	.wedding-location {
+		display: flex;
+		flex-direction: column; /* Stack vertically on mobile */
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.wedding-location-item {
+		width: 100%;
+		margin-bottom: 20px; /* Add space between items */
+	}
+
+	.party-group .parents-groom {
+		text-align: left;
+	}
+
+	.party-group .parents-bride {
+		text-align: left;
+	}
+
+	.sponsors-right {
+		text-align: left;
+	}
+}
+
+@media (max-width: 374px) {
+	.wedding-party .title {
+		font-size: 40px; /* Reduce from 60px */
+		word-break: break-word; /* Allow words to break if necessary */
+	}
+
+	.sponsor-title h3 {
+		font-size: 24px; /* Reduce from 30px */
+	}
+
+	.secondary-sponsors .left,
+	.secondary-sponsors .middle,
+	.secondary-sponsors .right {
+		text-align: left;
+		margin: 5px 0;
+	}
+
+	.sponsors-left,
+	.sponsors-right {
+		text-align: left;
 	}
 }
