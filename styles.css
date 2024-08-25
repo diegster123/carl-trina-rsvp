@@ -14,7 +14,7 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 88%;
+	max-width: 80%;
 	padding: 20px;
 }
 
@@ -424,6 +424,11 @@ footer a:hover {
 		height: 100px;
 	}
 
+	.wedding-party .title {
+		font-size: 40px; /* Reduce from 60px */
+		word-break: break-word; /* Allow words to break if necessary */
+	}
+
 	header h1 {
 		font-size: 36px;
 	}
@@ -434,6 +439,14 @@ footer a:hover {
 
 	.middle {
 		line-height: 50px;
+	}
+
+	.secondary-sponsors .left,
+	.secondary-sponsors .middle,
+	.secondary-sponsors .right {
+		text-align: left;
+		font-size: 16px;
+		margin: 5px 0;
 	}
 
 	.wedding-location {
@@ -463,28 +476,73 @@ footer a:hover {
 
 @media (max-width: 374px) {
 	.qr-code img {
-		width: 100px; /* Smaller size for mobile devices */
-		height: 100px;
+		width: 80px; /* Even smaller for very narrow screens */
+		height: 80px;
 	}
 
 	.wedding-party .title {
-		font-size: 40px; /* Reduce from 60px */
-		word-break: break-word; /* Allow words to break if necessary */
+		font-size: 32px; /* Further reduced from 40px */
+		word-break: break-word;
 	}
 
-	.sponsor-title h3 {
-		font-size: 24px; /* Reduce from 30px */
+	.wedding-party .nuptials {
+		font-size: 28px; /* Reduced from 40px */
+	}
+
+	.sponsor-title h3,
+	.party-item h3,
+	.best-man h3,
+	.maid-of-honor h3 {
+		font-size: 24px; /* Smaller font size for headings */
+	}
+
+	.party-item p,
+	.sponsors-left p,
+	.sponsors-right p,
+	.secondary-sponsors p,
+	.best-man p,
+	.maid-of-honor p {
+		font-size: 16px; /* Smaller font size for paragraphs */
 	}
 
 	.secondary-sponsors .left,
 	.secondary-sponsors .middle,
-	.secondary-sponsors .right {
-		text-align: left;
-		margin: 5px 0;
-	}
-
+	.secondary-sponsors .right,
 	.sponsors-left,
 	.sponsors-right {
 		text-align: left;
+		padding-left: 10px; /* Add some left padding for better readability */
+	}
+
+	.party-group,
+	.sponsors {
+		flex-direction: column; /* Stack items vertically */
+	}
+
+	.party-item,
+	.sponsors-left,
+	.sponsors-right {
+		width: 100%;
+		margin-bottom: 15px; /* Add some space between stacked items */
+	}
+
+	.wedding-location-item h1 {
+		font-size: 24px; /* Smaller font size for location headings */
+	}
+
+	.wedding-location-item h3 {
+		font-size: 18px; /* Smaller font size for location subheadings */
+	}
+
+	.wedding-location-item p {
+		font-size: 14px; /* Smaller font size for location paragraphs */
+	}
+
+	.timeline-item h3 {
+		font-size: 20px; /* Smaller font size for timeline headings */
+	}
+
+	.timeline-item p {
+		font-size: 14px; /* Smaller font size for timeline paragraphs */
 	}
 }
