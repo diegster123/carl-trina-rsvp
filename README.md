@@ -1,3 +1,3 @@
 # carl-anna-rsvp
 
-RSVP Website for wedding couple Carl and Anna. Project made using basic HTML, CSS, and Javascript. Static Webpage for Wedding RSVP with Google Forms embedded responses.
+Mobile Responsive RSVP Website for wedding couple Carl and Anna. Static Webpage for Wedding RSVP which accepts Google Forms embedded responses. Project made using basic HTML, CSS, and Javascript. Windows Subsystem Linux was used for working the terminal.
