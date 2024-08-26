@@ -120,13 +120,13 @@ header h1 {
 	font-family: "Playfair Display", serif;
 	font-size: 48px;
 	margin: 10px 0;
-	color: #b4886b;
+	color: #844e29;
 }
 
 .invitation .decoration {
 	width: 200px;
 	height: 3px;
-	background-color: #b4886b;
+	background-color: #844e29;
 	margin: 20px auto 0 auto;
 	position: relative;
 }
@@ -259,6 +259,16 @@ header h1 {
 .sponsors-right {
 	text-align: left;
 	margin: 20px;
+}
+
+.sponsors-right p {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.sponsors-right {
+	width: 25%;
+	max-width: 100%;
 }
 
 .best-man,
@@ -419,6 +429,10 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+	body {
+		background-position: left bottom;
+	}
+
 	.qr-code img {
 		width: 100px; /* Smaller size for mobile devices */
 		height: 100px;
@@ -433,6 +447,32 @@ footer a:hover {
 		font-size: 36px;
 	}
 
+	.party-group {
+		gap: 2px;
+	}
+
+	.party-group.sponsors {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sponsors-left,
+	.sponsors-right {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px; /* Add some space between the stacked columns */
+	}
+
+	.sponsors-left p,
+	.sponsors-right p {
+		margin: 10px 0; /* Add some vertical space between names */
+	}
+
+	.sponsor-title h3 {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
 	.google-form iframe {
 		width: 100%;
 	}
@@ -441,10 +481,13 @@ footer a:hover {
 		line-height: 50px;
 	}
 
+	.secondary-sponsors {
+		margin-right: 0;
+	}
+
 	.secondary-sponsors .left,
 	.secondary-sponsors .middle,
 	.secondary-sponsors .right {
-		text-align: left;
 		font-size: 16px;
 		margin: 5px 0;
 	}
@@ -468,12 +511,7 @@ footer a:hover {
 	.party-group .parents-bride {
 		text-align: left;
 	}
-
-	.sponsors-right {
-		text-align: left;
-	}
 }
-
 @media (max-width: 374px) {
 	.qr-code img {
 		width: 80px; /* Even smaller for very narrow screens */
@@ -496,13 +534,21 @@ footer a:hover {
 		font-size: 24px; /* Smaller font size for headings */
 	}
 
-	.party-item p,
+	.party-group {
+		gap: 38px;
+	}
+
 	.sponsors-left p,
-	.sponsors-right p,
+	.sponsors-right p {
+		font-size: 16px; /* Smaller font size for paragraphs */
+		text-align: center;
+	}
+
 	.secondary-sponsors p,
 	.best-man p,
+	.party-item p,
 	.maid-of-honor p {
-		font-size: 16px; /* Smaller font size for paragraphs */
+		font-size: 16px;
 	}
 
 	.secondary-sponsors .left,
@@ -512,11 +558,6 @@ footer a:hover {
 	.sponsors-right {
 		text-align: left;
 		padding-left: 10px; /* Add some left padding for better readability */
-	}
-
-	.party-group,
-	.sponsors {
-		flex-direction: column; /* Stack items vertically */
 	}
 
 	.party-item,
