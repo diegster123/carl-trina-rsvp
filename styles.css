@@ -112,7 +112,7 @@ header h1 {
 .invitation .save-the-date {
 	font-size: 18px;
 	font-family: "Raleway", sans-serif;
-	color: #777;
+	color: #353434;
 	margin: 0;
 }
 
@@ -225,11 +225,6 @@ header h1 {
 	margin-bottom: -20px;
 }
 
-.party-item {
-	text-align: left;
-	margin: 0 10px; /* Reduce the margin between items */
-}
-
 .party-item,
 .best-man h3 {
 	font-family: "Raleway", sans-serif;
@@ -257,7 +252,7 @@ header h1 {
 
 .sponsors-left,
 .sponsors-right {
-	text-align: left;
+	text-align: center;
 	margin: 20px;
 }
 
@@ -428,7 +423,7 @@ footer a:hover {
 	text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	body {
 		background-position: center right;
 	}
@@ -488,6 +483,10 @@ footer a:hover {
 		margin: 5px 0;
 	}
 
+	.secondary-sponsors .right {
+		text-align: left;
+	}
+
 	.wedding-location {
 		display: flex;
 		flex-direction: column; /* Stack vertically on mobile */
@@ -500,13 +499,13 @@ footer a:hover {
 		margin-bottom: 20px; /* Add space between items */
 	}
 
-	.party-group .parents-groom {
+	/* .party-group .parents-groom {
 		text-align: left;
 	}
 
 	.party-group .parents-bride {
 		text-align: left;
-	}
+	} */
 }
 @media (max-width: 374px) {
 	.qr-code img {
@@ -549,10 +548,13 @@ footer a:hover {
 
 	.secondary-sponsors .left,
 	.secondary-sponsors .middle,
-	.secondary-sponsors .right,
 	.sponsors-left,
 	.sponsors-right {
 		text-align: left;
+	}
+
+	.secondary-sponsors .right {
+		text-align: right;
 	}
 
 	.party-item,
@@ -585,10 +587,14 @@ footer a:hover {
 
 @media (max-width: 637px) {
 	.middle {
-		line-height: 50px;
+		line-height: 45px;
 	}
 
 	body {
 		background-position: center right;
+	}
+
+	.secondary-sponsors .right {
+		text-align: right;
 	}
 }
