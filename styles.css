@@ -477,10 +477,6 @@ footer a:hover {
 		width: 100%;
 	}
 
-	.middle {
-		line-height: 50px;
-	}
-
 	.secondary-sponsors {
 		margin-right: 0;
 	}
@@ -535,7 +531,7 @@ footer a:hover {
 	}
 
 	.party-group {
-		gap: 38px;
+		gap: 20px;
 	}
 
 	.sponsors-left p,
@@ -557,7 +553,6 @@ footer a:hover {
 	.sponsors-left,
 	.sponsors-right {
 		text-align: left;
-		padding-left: 10px; /* Add some left padding for better readability */
 	}
 
 	.party-item,
@@ -585,5 +580,11 @@ footer a:hover {
 
 	.timeline-item p {
 		font-size: 14px; /* Smaller font size for timeline paragraphs */
+	}
+}
+
+@media (max-width: 637px) {
+	.middle {
+		line-height: 50px;
 	}
 }
