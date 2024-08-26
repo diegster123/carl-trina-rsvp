@@ -152,7 +152,7 @@ header h1 {
 	font-family: "Playfair Display", serif;
 	font-size: 36px;
 	margin-bottom: 20px;
-	color: #b4886b;
+	color: #844e29;
 }
 
 .details .date {
@@ -169,7 +169,7 @@ header h1 {
 }
 
 .timeline-item {
-	background: linear-gradient(145deg, #e7a660, #a57d58);
+	background: linear-gradient(145deg, #9a6d3d, #a57d58);
 	padding: 20px;
 	border-radius: 8px;
 	flex: 1;
@@ -198,7 +198,7 @@ header h1 {
 .nuptials,
 .wedding-location-item {
 	font-family: "Playfair Display", serif;
-	color: #b4886b;
+	color: #844e29;
 }
 
 .wedding-location-item {
@@ -403,7 +403,7 @@ h3 {
 	font-size: 28px;
 	margin-bottom: 20px;
 	text-align: center;
-	color: #b4886b;
+	color: #844e29;
 }
 
 .google-form {
