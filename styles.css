@@ -303,18 +303,7 @@ header h1 {
 .secondary-sponsors .middle,
 .secondary-sponsors .right {
 	margin: 5px;
-}
-
-.secondary-sponsors .left {
-	text-align: left;
-}
-
-.secondary-sponsors .middle {
 	text-align: center;
-}
-
-.secondary-sponsors .right {
-	text-align: right;
 }
 
 .left p,
@@ -574,11 +563,11 @@ footer a:hover {
 	.secondary-sponsors .middle,
 	.sponsors-left,
 	.sponsors-right {
-		text-align: left;
+		text-align: center;
 	}
 
 	.secondary-sponsors .right {
-		text-align: right;
+		text-align: center;
 	}
 
 	.party-item,
@@ -619,6 +608,6 @@ footer a:hover {
 	}
 
 	.secondary-sponsors .right {
-		text-align: right;
+		text-align: center;
 	}
 }
