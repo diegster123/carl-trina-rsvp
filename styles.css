@@ -430,7 +430,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
 	body {
-		background-position: left bottom;
+		background-position: center right;
 	}
 
 	.qr-code img {
@@ -586,5 +586,9 @@ footer a:hover {
 @media (max-width: 637px) {
 	.middle {
 		line-height: 50px;
+	}
+
+	body {
+		background-position: center right;
 	}
 }
