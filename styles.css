@@ -133,9 +133,10 @@ header h1 {
 
 .details,
 .wedding-party,
-.wedding-location {
-	/* background-color: #fff; */
-	background-image: url(images/bg-container.svg);
+.wedding-location,
+.other-info {
+	background-color: #fff;
+	/* background-image: url(images/bg-container.svg); */
 	padding: 40px;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -197,7 +198,8 @@ header h1 {
 
 .wedding-party .title,
 .nuptials,
-.wedding-location-item {
+.wedding-location-item,
+.other-info h1 {
 	font-family: "Playfair Display", serif;
 	color: #844e29;
 }
@@ -334,6 +336,7 @@ header h1 {
 	display: flex;
 	width: 75%;
 	margin: 0 auto;
+	margin-bottom: 40px;
 }
 
 .wedding-location-item {
@@ -392,6 +395,24 @@ h3 {
 	height: 150px;
 	max-width: 100%;
 	height: auto;
+}
+
+.attire {
+	text-align: center;
+}
+
+.other-info {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.attire h1 {
+	font-size: 30px;
+}
+
+.attire h3 {
+	font-size: 16px;
+	margin-bottom: 0;
 }
 
 .rsvp h2 {
@@ -488,11 +509,13 @@ footer a:hover {
 		text-align: left;
 	}
 
-	.wedding-location {
+	.wedding-location,
+	.other-info {
 		display: flex;
 		flex-direction: column; /* Stack vertically on mobile */
 		width: 70%;
 		margin: 0 auto;
+		margin-bottom: 40px;
 	}
 
 	.wedding-location-item {
