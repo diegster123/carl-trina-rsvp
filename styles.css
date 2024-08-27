@@ -14,8 +14,8 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 80%;
-	padding: 20px;
+	max-width: 1200px;
+	padding: 0 20px;
 }
 
 header {
@@ -540,10 +540,6 @@ footer a:hover {
 
 	.google-form iframe {
 		width: 100%;
-	}
-
-	.secondary-sponsors {
-		margin: 0 auto;
 	}
 
 	.secondary-sponsors .left,
