@@ -237,6 +237,13 @@ header h1 {
 	margin-bottom: 10px;
 }
 
+.party-item h3,
+.sponsor-title h3,
+.best-man h3,
+.maid-of-honor h3 {
+	color: #333; /* This is the color used for best man and maid of honor titles */
+}
+
 .party-item p,
 .left p,
 .right p {
@@ -303,7 +310,14 @@ header h1 {
 .secondary-sponsors .middle,
 .secondary-sponsors .right {
 	margin: 5px;
-	text-align: center;
+}
+
+.secondary-sponsors .left {
+	text-align: left;
+}
+
+.secondary-sponsors .right {
+	text-align: right;
 }
 
 .left p,
@@ -454,12 +468,49 @@ footer a:hover {
 	}
 
 	.party-group {
+		flex-direction: column;
+		align-items: center;
 		gap: 2px;
+	}
+
+	/* New styles for details section */
+	.details h2 {
+		font-size: 28px; /* Reduced from 36px */
+	}
+
+	.timeline-item h3 {
+		font-size: 20px; /* Reduced from 24px */
+	}
+
+	.timeline-item p {
+		font-size: 12px; /* Reduced from 14px */
+	}
+
+	.sponsor-title h3,
+	.best-man h3,
+	.maid-of-honor h3 {
+		font-size: 24px; /* Reduced from 30px */
+	}
+
+	.party-item p,
+	.best-man p,
+	.maid-of-honor p {
+		font-size: 18px; /* Reduced from 20px */
 	}
 
 	.party-group.sponsors {
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.party-item.parents-groom,
+	.party-item.parents-bride,
+	.party-item.groom,
+	.party-item.bride {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 20px;
 	}
 
 	.sponsors-left,
@@ -495,6 +546,10 @@ footer a:hover {
 	}
 
 	.secondary-sponsors .right {
+		text-align: right;
+	}
+
+	.secondary-sponsors .left {
 		text-align: left;
 	}
 
@@ -608,6 +663,6 @@ footer a:hover {
 	}
 
 	.secondary-sponsors .right {
-		text-align: center;
+		text-align: right;
 	}
 }
