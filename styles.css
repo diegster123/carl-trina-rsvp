@@ -715,10 +715,6 @@ footer a:hover {
 		flex-direction: column;
 	}
 
-	.attire {
-		text-align: center;
-	}
-
 	.attire,
 	.colors {
 		flex-basis: 100%;
