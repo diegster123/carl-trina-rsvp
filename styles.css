@@ -407,22 +407,166 @@ h3 {
 	height: auto;
 }
 
-.attire {
-	text-align: center;
-}
-
 .other-info {
 	width: 75%;
 	margin: 0 auto;
+	text-align: center;
+	padding: 40px;
 }
 
-.attire h1 {
+.dress-code {
+	text-align: center;
+}
+
+.dress-code h1 {
 	font-size: 30px;
 }
 
-.attire h3 {
+.dress-code h3 {
 	font-size: 16px;
 	margin-bottom: 0;
+}
+
+.attire-and-colors {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.attire,
+.colors {
+	flex-basis: 45%;
+}
+
+.attire {
+	text-align: left;
+}
+
+.attire-and-colors h2 {
+	font-family: "Playfair Display", serif;
+	font-size: 30px;
+	color: #844e29;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.attire h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	color: #844e29;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.attire p,
+.colors p {
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 10px;
+}
+
+.color-palette {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.color-swatch {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.other-details {
+	margin-top: 40px;
+}
+
+.other-details h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 10px;
+}
+
+.other-details h2 {
+	font-family: "Playfair Display", serif;
+	font-size: 36px;
+	color: #844e29;
+	margin-bottom: 20px;
+}
+
+.separator {
+	width: 200px;
+	height: 2px;
+	background-color: #844e29;
+	margin: 20px auto;
+	position: relative;
+}
+
+.separator::before,
+.separator::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #844e29;
+	border-radius: 50%;
+	top: -4px;
+}
+
+.separator::before {
+	left: -5px;
+}
+
+.separator::after {
+	right: -5px;
+}
+
+.details-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.detail-item {
+	text-align: center;
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gift-icon {
+	background-image: url("path-to-your-gift-icon.svg");
+}
+
+.camera-icon {
+	background-image: url("path-to-your-camera-icon.svg");
+}
+
+.hashtag-icon {
+	background-image: url("path-to-your-hashtag-icon.svg");
+}
+
+.detail-item h4 {
+	font-family: "Playfair Display", serif;
+	font-size: 24px;
+	color: #844e29;
+	margin-bottom: 15px;
+}
+
+.detail-item p {
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	color: #555;
+	line-height: 1.6;
 }
 
 .rsvp h2 {
@@ -571,13 +715,46 @@ footer a:hover {
 		margin-bottom: 20px; /* Add space between items */
 	}
 
-	/* .party-group .parents-groom {
-		text-align: left;
+	.attire-and-colors {
+		flex-direction: column;
 	}
 
-	.party-group .parents-bride {
-		text-align: left;
-	} */
+	.attire {
+		text-align: center;
+	}
+
+	.attire,
+	.colors {
+		flex-basis: 100%;
+		margin-bottom: 40px;
+	}
+
+	.details-grid {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+
+	.other-details h2 {
+		font-size: 28px; /* Slightly smaller font size for mobile */
+	}
+
+	.detail-item {
+		max-width: 300px; /* Limit width for better readability */
+		margin: 0 auto; /* Center the items */
+	}
+
+	.icon {
+		width: 50px; /* Slightly smaller icons for mobile */
+		height: 50px;
+	}
+
+	.detail-item h4 {
+		font-size: 22px; /* Slightly smaller heading for mobile */
+	}
+
+	.detail-item p {
+		font-size: 14px; /* Maintain readability on smaller screens */
+	}
 }
 @media (max-width: 374px) {
 	.qr-code img {
