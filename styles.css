@@ -301,23 +301,30 @@ header h1 {
 
 .secondary-sponsors {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: flex-start;
-	margin-right: 30px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .secondary-sponsors .left,
-.secondary-sponsors .middle,
 .secondary-sponsors .right {
+	flex: 1;
 	margin: 5px;
 }
 
+.secondary-sponsors .middle {
+	flex: 1;
+	text-align: center;
+	padding: 0 10px;
+}
+
 .secondary-sponsors .left {
-	text-align: left;
+	text-align: right;
 }
 
 .secondary-sponsors .right {
-	text-align: right;
+	text-align: left;
 }
 
 .left p,
@@ -494,7 +501,8 @@ footer a:hover {
 
 	.party-item p,
 	.best-man p,
-	.maid-of-honor p {
+	.maid-of-honor p,
+	.secondary-sponsors p {
 		font-size: 18px; /* Reduced from 20px */
 	}
 
@@ -535,7 +543,7 @@ footer a:hover {
 	}
 
 	.secondary-sponsors {
-		margin-right: 0;
+		margin: 0 auto;
 	}
 
 	.secondary-sponsors .left,
@@ -612,17 +620,6 @@ footer a:hover {
 	.party-item p,
 	.maid-of-honor p {
 		font-size: 16px;
-	}
-
-	.secondary-sponsors .left,
-	.secondary-sponsors .middle,
-	.sponsors-left,
-	.sponsors-right {
-		text-align: center;
-	}
-
-	.secondary-sponsors .right {
-		text-align: center;
 	}
 
 	.party-item,
