@@ -1,11 +1,18 @@
 /* Font Imports */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway&display=swap");
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	background-image: url(images/wedding-bg.svg);
 	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
 	color: #333;
 	font-family: "Raleway", sans-serif;
 	max-width: 1600px;
