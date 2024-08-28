@@ -503,7 +503,7 @@ h3 {
 }
 
 .separator {
-	width: 200px;
+	width: 60%;
 	height: 2px;
 	background-color: #844e29;
 	margin: 20px auto;
@@ -605,9 +605,20 @@ footer a:hover {
 }
 
 @media (max-width: 1024px) {
-	body {
-		background-attachment: scroll;
+	body::before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-image: url(images/wedding-bg.svg);
+		background-size: cover;
 		background-position: center top;
+		z-index: -1;
+	}
+	body {
+		background-image: none;
 	}
 
 	.qr-code img {
