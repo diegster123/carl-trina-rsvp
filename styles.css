@@ -606,7 +606,8 @@ footer a:hover {
 
 @media (max-width: 1024px) {
 	body {
-		background-position: center right;
+		background-attachment: scroll;
+		background-position: center top;
 	}
 
 	.qr-code img {
