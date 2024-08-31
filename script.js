@@ -39,32 +39,32 @@ document.addEventListener("DOMContentLoaded", () => {
 		".invitation, .details, .wedding-party, .wedding-location, .other-info, .other-details, .rsvp",
 		{
 			origin: "bottom",
-			interval: 20,
+			interval: 35,
 		}
 	);
 
 	// Animate timeline items
 	sr.reveal(".timeline-item", {
 		origin: "bottom",
-		interval: 20,
+		interval: 150,
 	});
 
 	// Animate party groups
 	sr.reveal(".party-group", {
 		origin: "bottom",
-		interval: 20,
+		interval: 35,
 	});
 
 	// Animate color swatches
 	sr.reveal(".color-swatch", {
 		origin: "bottom",
-		interval: 20,
+		interval: 150,
 	});
 
 	// Animate details grid items
 	sr.reveal(".detail-item", {
 		origin: "bottom",
-		interval: 20,
+		interval: 35,
 	});
 
 	// Add fade-in effect to text elements
@@ -72,6 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		origin: "bottom",
 		distance: "20px",
 		opacity: 0,
-		interval: 20,
+		interval: 30,
 	});
 });
