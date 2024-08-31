@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const sr = ScrollReveal({
 		distance: "60px",
 		duration: 1500,
-		delay: 400,
+		delay: 20,
 		easing: "cubic-bezier(0.5, 0, 0, 1)",
 	});
 
@@ -39,32 +39,32 @@ document.addEventListener("DOMContentLoaded", () => {
 		".invitation, .details, .wedding-party, .wedding-location, .other-info, .other-details, .rsvp",
 		{
 			origin: "bottom",
-			interval: 200,
+			interval: 20,
 		}
 	);
 
 	// Animate timeline items
 	sr.reveal(".timeline-item", {
 		origin: "bottom",
-		interval: 100,
+		interval: 20,
 	});
 
 	// Animate party groups
 	sr.reveal(".party-group", {
 		origin: "bottom",
-		interval: 150,
+		interval: 20,
 	});
 
 	// Animate color swatches
 	sr.reveal(".color-swatch", {
 		origin: "bottom",
-		interval: 100,
+		interval: 20,
 	});
 
 	// Animate details grid items
 	sr.reveal(".detail-item", {
 		origin: "bottom",
-		interval: 150,
+		interval: 20,
 	});
 
 	// Add fade-in effect to text elements
@@ -72,6 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		origin: "bottom",
 		distance: "20px",
 		opacity: 0,
-		interval: 100,
+		interval: 20,
 	});
 });
