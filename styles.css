@@ -239,7 +239,7 @@ header h1 {
 .party-item,
 .best-man h3 {
 	font-family: "Raleway", sans-serif;
-	font-size: 30px;
+	font-size: 24px;
 	color: #333;
 	font-weight: bold;
 	margin-bottom: 10px;
@@ -250,6 +250,7 @@ header h1 {
 .best-man h3,
 .maid-of-honor h3 {
 	color: #333; /* This is the color used for best man and maid of honor titles */
+	font-size: 28px;
 }
 
 .party-item p,
@@ -270,7 +271,7 @@ header h1 {
 
 .sponsors-left,
 .sponsors-right {
-	text-align: center;
+	text-align: justify;
 	margin: 20px;
 }
 
@@ -296,7 +297,7 @@ header h1 {
 
 .maid-of-honor h3 {
 	font-family: "Raleway", sans-serif;
-	font-size: 30px;
+
 	color: #333;
 	font-weight: bold;
 	margin-bottom: 10px;
