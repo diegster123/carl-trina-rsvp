@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		".invitation, .details, .wedding-party, .wedding-location, .other-info, .other-details, .rsvp",
 		{
 			origin: "bottom",
-			interval: 35,
+			interval: 100,
 		}
 	);
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Animate party groups
 	sr.reveal(".party-group", {
 		origin: "bottom",
-		interval: 35,
+		interval: 100,
 	});
 
 	// Animate color swatches
