@@ -1,3 +1,5 @@
 # carl-anna-rsvp
 
-Mobile Responsive RSVP Website for wedding couple Carl and Anna. Static Webpage for Wedding RSVP which accepts Google Forms embedded responses. Project made using basic HTML, CSS, and Javascript. Windows Subsystem Linux was used for working the terminal.
+Mobile Responsive RSVP Website for wedding couple Carl and Trina. Static website accepts embedded Google Forms for RSVP. Project made using basic HTML, CSS, and Javascript. Javascript library https://scrollrevealjs.org/ used for scroll transition animation for smooth website feel. Canva was used for the creation of the background. Project was mainly worked using Windows Subsystem Linux for creating files and directories, and comitting, pushing, pulling to GitHub.
+
+Site live at http://carl-and-trina.site/
