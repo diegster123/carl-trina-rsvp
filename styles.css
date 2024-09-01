@@ -271,8 +271,15 @@ header h1 {
 
 .sponsors-left,
 .sponsors-right {
-	text-align: justify;
 	margin: 20px;
+}
+
+.sponsors-left {
+	text-align: right;
+}
+
+.sponsors-right {
+	text-align: left;
 }
 
 .sponsors-right p {
@@ -605,7 +612,7 @@ footer a:hover {
 	text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 	body::before {
 		content: "";
 		position: fixed;
@@ -655,6 +662,7 @@ footer a:hover {
 		font-size: 12px; /* Reduced from 14px */
 	}
 
+	.party-item h3,
 	.sponsor-title h3,
 	.best-man h3,
 	.maid-of-honor h3 {
