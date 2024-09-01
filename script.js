@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	// Add fade-in effect to text elements
-	sr.reveal(".invitation p, .details p, .wedding-party p", {
+	sr.reveal(".invitation p, .details p, .wedding-party p, .attire p", {
 		origin: "bottom",
 		distance: "20px",
 		opacity: 0,
