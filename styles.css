@@ -853,12 +853,14 @@ footer a:hover {
 	}
 }
 
-@media (max-width: 637px) {
+@media (max-width: 611px) {
+	.middle {
+		line-height: 25px;
+	}
+}
+
+@media (max-width: 587px) {
 	.middle {
 		line-height: 45px;
-	}
-
-	body {
-		background-position: right;
 	}
 }
