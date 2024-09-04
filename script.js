@@ -77,4 +77,24 @@ document.addEventListener("DOMContentLoaded", () => {
 			interval: 30,
 		}
 	);
+
+	// Animate wedding location elements
+	sr.reveal(".wedding-location .qr-code", {
+		origin: "bottom",
+		distance: "40px",
+		interval: 100,
+	});
+	sr.reveal(
+		".wedding-location h1, .wedding-location h3, .wedding-location p",
+		{
+			origin: "bottom",
+			distance: "40px",
+			interval: 150,
+		}
+	);
+	sr.reveal(".wedding-location .parish", {
+		origin: "bottom",
+		distance: "60px",
+		interval: 200,
+	});
 });
