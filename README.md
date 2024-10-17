@@ -13,8 +13,6 @@ Web and Mobile Responsive RSVP Website for wedding client. Skills to create proj
 ## TODO
 
 -   Names in website not finalized
--   Google forms are not for official use as of the moment
--   Images in carousel not final
 
 ## Deployed using GitHub Pages
 
