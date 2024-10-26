@@ -360,9 +360,11 @@ header h1 {
 
 .wedding-location {
 	display: flex;
+	flex-wrap: wrap;
 	width: 85%;
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	position: relative;
 }
 
 .wedding-location-item {
@@ -612,7 +614,141 @@ footer a:hover {
 	text-decoration: underline;
 }
 
+#map-directions {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	clear: both; /* Ensures it stays below the location items */
+}
+
+/* Add these styles to your styles.css file */
+.map-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	background-color: #844e29;
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	margin: 32px auto 0;
+	font-family: "Raleway", sans-serif;
+	transition: background-color 0.3s ease;
+	position: relative;
+	z-index: 1;
+}
+
+.map-button:hover {
+	background-color: #6d3f21;
+}
+
+.map-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21'%3E%3C/polygon%3E%3Cline x1='9' y1='3' x2='9' y2='18'%3E%3C/line%3E%3Cline x1='15' y1='6' x2='15' y2='21'%3E%3C/line%3E%3C/svg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.map-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999; /* Increased z-index to ensure it's above all content */
+}
+
+.map-modal-overlay {
+	position: fixed; /* Changed from absolute to fixed */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999; /* Match the modal's z-index */
+}
+.map-modal-content {
+	position: fixed; /* Changed from relative to fixed */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	height: 80vh;
+	max-width: 1000px;
+	background: white;
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 10000; /* Higher than the overlay */
+}
+
+.map-modal-content iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.map-modal-close {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	width: 40px;
+	height: 40px;
+	background: white;
+	border: none;
+	border-radius: 50%;
+	font-size: 24px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1002;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease;
+}
+
+.map-modal-close:hover {
+	background-color: #f0f0f0;
+}
+
 @media (max-width: 1023px) {
+	#map-directions {
+		margin-top: 10px;
+	}
+
+	.map-modal-content {
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%; /* Increased from 75% for better mobile visibility */
+		height: 70vh; /* Adjusted from 55vh for better vertical centering */
+		max-width: 600px; /* Added max-width for larger phones */
+		margin: 0 auto; /* Ensures horizontal centering */
+		border-radius: 8px;
+		padding: 0; /* Remove any padding that might affect centering */
+	}
+
+	.map-modal-overlay {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 20px; /* Add some padding around the modal */
+		padding-top: 60px; /* Added top padding to help with positioning */
+	}
+
+	.map-modal-close {
+		top: 8px; /* Adjusted from 16px */
+		right: 8px; /* Adjusted from 16px */
+		width: 32px; /* Slightly smaller close button */
+		height: 32px;
+		font-size: 20px;
+	}
+
 	body::before {
 		content: "";
 		position: fixed;
