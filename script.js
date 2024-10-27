@@ -32,10 +32,12 @@ function createMapModal() {
 	// Add click events
 	btn.onclick = () => {
 		modal.style.display = "block";
+		document.body.style.overflow = "hidden"; // Prevent background scrolling
 	};
 
 	const closeModal = () => {
 		modal.style.display = "none";
+		document.body.style.overflow = ""; // Restore scrolling
 	};
 
 	closeBtn.onclick = closeModal;
